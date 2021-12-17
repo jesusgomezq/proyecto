@@ -377,11 +377,18 @@ body {
   font-weight: bolder;
 }
 
-/*===>mobile<===*/
+/*===>MOBILE<===*/
 
 @media screen and (max-width: 376px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
   .section {
     display: flex;
+    background-image: none;
     width: 100%;
   }
 }
