@@ -121,14 +121,8 @@ body {
 .atracciones--playas,
 .atracciones--mall,
 .atracciones--castillos {
-  width: 100%;
+  max-width: 100%;
   padding: 20px 10px;
-}
-
-.atracciones--dunes,
-.atracciones--mall,
-.atracciones--playas,
-.atracciones--castillos {
   object-fit: cover;
 }
 
@@ -204,6 +198,10 @@ body {
   color: darkslategrey;
   transition: all 1s ease;
   margin-bottom: 20px;
+}
+
+.slider__contenedor--2 {
+  display: none;
 }
 
 .slider__contenedor {
@@ -395,5 +393,61 @@ body {
     display: flex;
     background-image: none;
     width: 100%;
+    overflow: hidden;
+  }
+
+  .header__logo {
+    padding-bottom: 10px;
+  }
+
+  .section__titulo {
+    /* display: flex; */
+    align-items: center;
+    width: 100%;
+    margin: 0 0 0 40px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 0 0 80px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    overflow: hidden;
+  }
+
+  .sectionMain__titulo,
+  .sectionMain__parrafo {
+    display: none;
+  }
+
+  .atracciones--dunes,
+  .atracciones--mall,
+  .atracciones--playas,
+  .atracciones--castillos {
+    max-width: 90%;
+  }
+
+  .atracciones__parrafo {
+    display: none;
+  }
+
+  .atracciones__btn {
+    display: none;
+  }
+
+  .atraccion__contenedor {
+    display: none;
+  }
+
+  .slider__contenedor {
+    display: none;
+  }
+
+  .slider__contenedor--2 {
+    display: initial;
+    width: 90%;
   }
 }
