@@ -237,3 +237,24 @@ body {
   font-weight: bolder;
   font-weight: bolder;
 }
+
+/*==========MOBILE=======*/
+
+@media screen and (max-width: 376px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__link {
+    width: 100%;
+    font-size: 1rem;
+    /* overflow: hidden; */
+  }
+
+  .header__logo {
+    width: 30%;
+    overflow: hidden;
+  }
+}
