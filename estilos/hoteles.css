@@ -262,11 +262,6 @@ body {
 
   .contenedor__galeria {
     display: block;
-    /* margin: 10px auto; */
-  }
-
-  .contenedor__hoteles {
-    width: 100%;
   }
 
   .titulo--hoteles {
@@ -274,9 +269,8 @@ body {
   }
 
   .galeria__img {
-    width: 100%;
-
-    display: block;
-    margin: 20px auto;
+    /* width: 100%; */
+    /* max-height: 70%; */
+    margin: 20px 0;
   }
 }
