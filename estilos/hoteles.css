@@ -245,16 +245,31 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .header__link {
-    width: 100%;
-    font-size: 1rem;
-    /* overflow: hidden; */
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .header__logo {
     width: 30%;
     overflow: hidden;
+  }
+
+  .contenedor__hoteles {
+    width: 100%;
+  }
+
+  .titulo--hoteles {
+    font-size: 2rem;
+  }
+
+  .galeria__img {
+    width: 100%;
+    max-height: 70%;
   }
 }
