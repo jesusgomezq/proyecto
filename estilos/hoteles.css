@@ -260,6 +260,11 @@ body {
     overflow: hidden;
   }
 
+  .contenedor__galeria {
+    display: block;
+    /* margin: 10px auto; */
+  }
+
   .contenedor__hoteles {
     width: 100%;
   }
@@ -270,6 +275,8 @@ body {
 
   .galeria__img {
     width: 100%;
-    max-height: 70%;
+
+    display: block;
+    margin: 20px auto;
   }
 }
