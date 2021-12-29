@@ -32,11 +32,6 @@
   font-size: 2.5rem;
 }
 
-.carousel-item {
-  height: 500px;
-}
-
 .img__carrusel {
-  max-height: 100%;
   object-fit: cover;
 }
