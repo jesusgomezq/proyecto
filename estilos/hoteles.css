@@ -48,6 +48,11 @@ body {
   border-bottom: 2px solid #3d9af3;
 }
 
+.contenedor__hoteles {
+  width: 90vw;
+  margin: 0 auto;
+}
+
 .titulo--hoteles {
   text-align: center;
   font-size: 3rem;
