@@ -125,11 +125,13 @@ body {
 }
 
 .atracciones--castillos {
-  height: 265px;
+  max-width: 170%;
+  max-height: 260px;
 }
 
 .atracciones--mall {
-  height: 265px;
+  max-width: 100%;
+  ma
 }
 
 .atraccion__titulo--center {
@@ -452,4 +454,5 @@ body {
     width: 50%;
     overflow: hidden;
   }
+
 }
