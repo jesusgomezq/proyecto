@@ -1,2 +1,4 @@
 .gitignores
+node_modules/
+
 
