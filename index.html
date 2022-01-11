@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos/inicio.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/main.css">
+    <!-- <link rel="stylesheet" href="estilos/inicio.css" /> -->
     <link rel="icon" href="asset/logo_head.jpg" />
-    <title>Margarita´s journey</title>
+    <title>Margarita's journey</title>
   </head>
+
   <body>
+    <!-- HEADER -->
     <header class="header">
-      <img class="header__logo" src="asset/logo.jpg" alt="Imagen de logo" />
+      <img class="header__logo" src="asset/logo.jpg" alt="Margarita Viajes"/>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
@@ -34,19 +40,20 @@
       </nav>
     </header>
     <!-- <hr class="barra" /> -->
-    <main class="main">
+
+    <!-- MAIN -->
+    <main>
       <section class="section">
         <div class="section__contenedor">
-          <h1 class="section__titulo">Ven a conocer nuestra isla.</h1>
-          <button class="btn">Más informacion</button>
+          <h1>Ven a conocer nuestra isla</h1>
+          <button class="btn btn--principal">Más informacion</button>
         </div>
       </section>
+
       <section class="sectionMain">
         <div class="sectionMain__contenedor">
           <iframe
             class="sectionMain__video"
-            width="550"
-            height="250"
             src="https://www.youtube.com/embed/_zd7icxEsbQ"
             title="YouTube video player"
             frameborder="0"
@@ -58,171 +65,135 @@
           </iframe>
         </div>
         <div class="sectionMain__contenedor">
-          <h2 class="sectionMain__titulo">
-            Lorem ipsum dolor sit amet consectetur.
-          </h2>
+          <h2 class="sectionMain__titulo">Isla de Margarita, tu destino ideal</h2>
           <p class="sectionMain__parrafo">
-            Ven a conocer nuestra isla, donde pofras disfrutar de nuestras
+            Ven a conocer nuestra isla, donde podras disfrutar de nuestras
             hermosas playas, centros comerciales, castillos y un sin fin de
             cosas que podras hacer para el disfrute de la familia en general.
             Ademas contamos con visitas guiadas.
           </p>
         </div>
       </section>
+
+      <section class="atracciones">
+        <h2>Atracciones</h2>
+        <div class="atracciones__contenedor">
+          <div>
+            <div class="atracciones__imagen">
+              <img src="asset/hotel_dunes.jpg" alt="Hotel Dunes" />
+            </div>
+            <h3>Hoteles</h3>
+            <p class="atracciones__parrafo">
+              Conoce los mejores hoteles, donde puedes venir a disfrutar en familia.
+              Hoteles 5 estrellas, con diversas atracciones, ubicados en las mejores zonas de la isla.
+            </p>
+            <div class="atracciones__btn">
+              <button class="btn">Más informacion</button>
+            </div>
+          </div>
+          <div>
+            <div class="atracciones__imagen">
+              <img src="asset/playa_el_yake.jpg" alt="Playas" />
+            </div>
+            <h3>Playas</h3>
+            <p class="atracciones__parrafo">
+              Las playas mas paradisiacas, las mejores aguas las arenas mas blancas del mar caribe las encuentras aqui, en MARGARITA. 
+              ACtividades recreacionales y mas.
+            </p>
+            <div class="atracciones__btn">
+              <button class="btn">Más informacion</button>
+            </div>
+          </div>
+          <div>
+            <div class="atracciones__imagen">
+              <img src="asset/parquecostazul.jpg" alt="Centros comerciales" />
+            </div>
+            <h3>Centros comerciales</h3>
+            <p class="atracciones__parrafo">
+              Los mejores centros comerciales, con las marcas mas exclusivas, ubicados en zonas de facil acceso.
+              Todos climatizados, seguridad privada, feiras de comida, estacionamiento privado
+            </p>
+            <div class="atracciones__btn">
+              <button class="btn">Más informacion</button>
+            </div>
+          </div>
+          <div>
+            <div class="atracciones__imagen">
+              <img src="asset/castillo_margarita.jpg" alt="Castillos" />
+            </div>
+            <h3>Castillos</h3>
+            <p class="atracciones__parrafo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam veniam esse et consequatur itaque dicta.
+            </p>
+            <div class="atracciones__btn">
+              <button class="btn">Más informacion</button>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+      <section class="slider__contenedor">
+        <ul class="slider__list">
+          <li class="slider__item" id="img_1"><img class="slider__img" src="asset/hotel_dunes.jpg" alt=""></a></li>
+          <li class="slider__item" id="img_2"><img class="slider__img" src="asset/playa_el_yake.jpg" alt=""></a></li>
+          <li class="slider__item" id="img_3"><img class="slider__img" src="asset/parquecostazul.jpg" alt=""></a></li>
+          <li class="slider__item" id="img_4"><img class="slider__img" src="asset/castillo_margarita.jpg" alt=""></a></li>
+        </ul>
+        <ul class="slider__menu">
+          <li class="slider__menu__item"><a class="slider__link" href="#img_1">1</a></li>
+          <li class="slider__menu__item"><a class="slider__link" href="#img_2">2</a></li>
+          <li class="slider__menu__item"><a class="slider__link" href="#img_3">3</a></li>
+          <li class="slider__menu__item"><a class="slider__link" href="#img_4">4</a></li>
+        </ul>
+      </section>
+
+      <section class="contacto">
+        <h1>Contactanos</h1>
+        <div class="contacto__contenedor">
+          <form action="" class="contacto__formulario">
+            <input
+              class="nombre"
+              type="text"
+              name=""
+              id=""
+              placeholder="Nombre"
+            />
+            <input
+              class="apellido"
+              type="text"
+              name=""
+              id=""
+              placeholder="Apellido"
+            />
+            <input
+              class="correo"
+              type="email"
+              name=""
+              id=""
+              placeholder="Correo electronico"
+            />
+            <select class="contacto__pais" name="" id="">
+              <option value="arg" selected disabled>Selecciona un pais</option>
+              <option value="arg">Argentina</option>
+              <option value="arg">Alemania</option>
+              <option value="arg">Belgica</option>
+              <option value="arg">Venezuela</option>
+              <option value="arg">Chile</option>
+              <option value="fran">Francia</option>
+            </select>
+            <textarea
+              name=""
+              id=""
+              class="contacto__mensaje"
+              placeholder="Deja un mensaje"
+            ></textarea>
+            <input type="submit" name="" id="" value="Contacto" class="btn btn--footer" />
+          </form>
+        </div>
+      </section>
     </main>
-    <section class="atraccioines">
-      <h2 class="atraccion__titulo--center">Atracciones</h2>
-      <div class="atraccion__contenedor">
-        <div
-          class="actraccion__lugares"
-          data-aos="fade-in"
-          data-aos-delay="100"
-          data-aos-one="true"
-        >
-          <img
-            class="atracciones__img atracciones--dunes"
-            src="asset/hotel_dunes.jpg"
-            alt="Hotel Dunes"
-          />
-          <h2 class="atracciones__titulo">Hoteles</h2>
-          <p class="atracciones__parrafo">
-            Conoce los mejores hoteles, donde puedes venir a disfrutar en familia.
-            Hoteles 5 estrellas, con diversas atracciones, ubicados en las mejores zonas de la isla.
-          </p>
-          <button class="atracciones__btn">Más informacion</button>
-        </div>
-        <div
-          class="actraccion__lugares"
-          data-aos="fade-in"
-          data-aos-delay="100"
-          data-aos-one="true"
-        >
-          <img
-            class="atracciones__img atracciones--playas"
-            src="asset/playa_el_yake.jpg"
-            alt="Playas"
-          />
-          <h2 class="atracciones__titulo">Playas</h2>
-          <p class="atracciones__parrafo">
-            Las playas mas paradisiacas, las mejores aguas las arenas mas blancas del mar caribe las encuentras aqui, en MARGARITA. 
-            ACtividades recreacionales y mas.
-          </p>
-          <button class="atracciones__btn">Más informacion</button>
-        </div>
-        <div
-          class="actraccion__lugares"
-          data-aos="fade-in"
-          data-aos-delay="100"
-          data-aos-one="true"
-        >
-          <img
-            class="atracciones__img atracciones--mall"
-            src="asset/parquecostazul.jpg"
-            alt="Centro comercialesS"
-          />
-          <h2 class="atracciones__titulo">Centros comerciales</h2>
-          <p class="atracciones__parrafo">
-            Los mejores centros comerciales, con las marcas mas exclusivas, ubicados en zonas de facil acceso.
-            Todos climatizados, seguridad privada, feiras de comida, cines etc
-          </p>
-          <button class="atracciones__btn">Más informacion</button>
-        </div>
-        <div
-          class="actraccion__lugares"
-          data-aos="fade-in"
-          data-aos-delay="100"
-          data-aos-one="true"
-        >
-          <img
-            class="atracciones__img atracciones--castillos"
-            src="asset/castillo_margarita.jpg"
-            alt="Castillos"
-          />
-          <h2 class="atracciones__titulo">Castillos</h2>
-          <p class="atracciones__parrafo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            quam veniam esse et consequatur itaque dicta.
-          </p>
-          <button class="atracciones__btn">Más informacion</button>
-        </div>
-      </div>
-    </section>
-    <!-----------MObile--------->
-    <section class="slider__contenedor--2">
-      <ul class="slider__list">
-        <li class="slider__item" id="img_1"><img class="slider__img" src="asset/hotel_dunes.jpg" alt=""></a></li>
-        <li class="slider__item" id="img_2"><img class="slider__img" src="asset/playa_el_yake.jpg" alt=""></a></li>
-        <li class="slider__item" id="img_3"><img class="slider__img" src="asset/parquecostazul.jpg" alt=""></a></li>
-        <li class="slider__item" id="img_4"><img class="slider__img" src="asset/castillo_margarita.jpg" alt=""></a></li>
-      </ul>
-      <ul class="slider__menu">
-        <li class="slider__menu__item"><a class="slider__link" href="#img_1">1</a></li>
-        <li class="slider__menu__item"><a class="slider__link" href="#img_2">2</a></li>
-        <li class="slider__menu__item"><a class="slider__link" href="#img_3">3</a></li>
-        <li class="slider__menu__item"><a class="slider__link" href="#img_4">4</a></li>
-      </ul>
-    </section>
-
-    <section class="slider__contenedor">
-      <ul class="slider__list">
-        <!-- <li class="slider__item"><img class="slider__img" src="asset/hesperia__carrusel.jpg" alt=""></a></li> -->
-        <li class="slider__item" id="img_1"><img class="slider__img" src="asset/img_1__carrusel.jpg" alt=""></a></li>
-        <li class="slider__item" id="img_2"><img class="slider__img" src="asset/hesperia__carrusel.jpg" alt=""></a></li>
-        <li class="slider__item" id="img_3"><img class="slider__img" src="asset/sunsol_carrusel.jpg" alt=""></a></li>
-      </ul>
-      <ul class="slider__menu">
-        <li class="slider__menu__item"><a class="slider__link" href="#img_1">1</a></li>
-        <li class="slider__menu__item"><a class="slider__link" href="#img_2">2</a></li>
-        <li class="slider__menu__item"><a class="slider__link" href="#img_3">3</a></li>
-        <!-- <li class="slider__item"><a class="slider__link" href=""></a>4</li> -->
-      </ul>
       
-    </section>
-    <section class="contacto">
-      <h1>Contactanos</h1>
-      <div class="contacto__contenedor">
-        <form action="" class="contacto__formulario">
-          <input
-            class="nombre"
-            type="text"
-            name=""
-            id=""
-            placeholder="Nombre"
-          />
-          <input
-            class="apellido"
-            type="text"
-            name=""
-            id=""
-            placeholder="Apellido"
-          />
-
-          <input
-            class="correo"
-            type="email"
-            name=""
-            id=""
-            placeholder="Correo electronico"
-          />
-          <select class="contacto__pais" name="" id="">
-            <option value="arg" selected disabled>Selecciona un pais</option>
-            <option value="arg">Argentina</option>
-            <option value="arg">Alemania</option>
-            <option value="arg">Belgica</option>
-            <option value="arg">Venezuela</option>
-            <option value="arg">Chile</option>
-            <option value="fran">Francia</option>
-          </select>
-          <textarea
-            name=""
-            id=""
-            class="contacto__mensaje"
-            placeholder="Deja un mensaje"
-          ></textarea>
-          <input type="submit" name="" id="" value="Contacto" class="btn" />
-        </form>
-      </div>
-    </section>
+    <!-- FOOTER -->
     <footer class="foot">
       <section class="foot__footer">
         <ul class="foot__list">
