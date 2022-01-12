@@ -236,13 +236,13 @@ body {
   padding: 5px;
 }
 
-.slider__list .slider__item .slider__img {
+/* .slider__list .slider__item .slider__img {
   max-width: 100%;
   min-width: 100%;
   max-height: 300px;
   min-height: 300px;
   object-fit: cover;
-}
+} */
 
 .slider__list .slider__item:first-child {
   opacity: 1;

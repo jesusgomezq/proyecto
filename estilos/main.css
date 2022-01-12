@@ -369,4 +369,171 @@ body {
   font-weight: bolder;
   font-weight: bolder;
 }
+
+/*===>MOBILE<===*/
+@media only screen and (max-width: 1400px) {
+  .sectionMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .sectionMain iframe {
+    width: 100%;
+    /* margin-bottom: 25px; */
+  }
+  .sectionMain div h2 {
+    margin-bottom: 25px;
+  }
+  .atracciones__contenedor div {
+    width: 50%;
+  }
+  .atracciones__contenedor .atracciones__imagen {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .atracciones__parrafo {
+    height: 125px;
+  }
+  .atracciones__btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section {
+    padding: 0;
+    text-align: center;
+  }
+  .section__contenedor {
+    width: 100%;
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .section__contenedor h1 {
+    margin-bottom: 20px;
+  }
+  .btn {
+    font-size: 1.25rem;
+    background-color: #0e0253;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+  }
+  .atracciones__contenedor div {
+    width: 100%;
+  }
+  .atracciones__parrafo {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .header__item {
+    list-style-type: none;
+    margin: 1px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__link {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: none;
+    width: 100%;
+    overflow: hidden;
+  }
+  .header__logo {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .sectionMain__contenedor .sectionMain_video {
+    width: 100%;
+  }
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+    margin: 0 0 0 80px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    overflow: hidden;
+  }
+  .sectionMain__titulo,
+  .sectionMain__parrafo {
+    display: none;
+  }
+  .atracciones--dunes,
+  .atracciones--mall,
+  .atracciones--playas,
+  .atracciones--castillos {
+    width: 100%;
+  }
+  .atracciones__parrafo {
+    display: none;
+  }
+  .atracciones__btn {
+    display: none;
+  }
+  .atracciones__contenedor {
+    display: none;
+  }
+  .slider__contenedor {
+    display: none;
+  }
+  .slider__contenedor--2 {
+    display: initial;
+    width: 50%;
+    overflow: hidden;
+  }
+}
 /*# sourceMappingURL=main.css.map */
