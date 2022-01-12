@@ -29,15 +29,19 @@ body {
 .header__list .header__item {
   margin: 0 10px;
   list-style-type: none;
+<<<<<<< HEAD
 }
 
 .header__item .header__link {
   text-decoration: none;
   font-size: 1.5rem;
+=======
+>>>>>>> 793aeadb10c6a9b5e7430ae683f3cbc2662b0a60
 }
 
-.header__link:hover {
-  border-bottom: 2px solid #3d9af3;
+.header__item .header__link {
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .section {
@@ -119,6 +123,7 @@ body {
 .atracciones h2 {
   text-align: center;
   margin-bottom: 50px;
+<<<<<<< HEAD
   color: #0e0253;
   font-size: 2rem;
 }
@@ -150,6 +155,39 @@ body {
   text-align: center;
   font-size: 1.5rem;
   color: #0e0253;
+=======
+  color: #0e0253;
+  font-size: 2rem;
+}
+
+.atraccion__contenedor {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.atraccion__contenedor div {
+  width: 25%;
+}
+
+.atraccion__contenedor .atraccion__imagen {
+  width: 100%;
+  text-align: center;
+}
+
+.atraccion__contenedor div img {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 250px;
+  min-height: 250px;
+  padding: 10px;
+}
+
+.atraccion__contenedor h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #0e0253;
+>>>>>>> 793aeadb10c6a9b5e7430ae683f3cbc2662b0a60
   margin: 10px 0 25px 0;
 }
 
