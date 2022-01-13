@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 .gitignore
-=======
-.gitignores
 node_modules/
->>>>>>> 793aeadb10c6a9b5e7430ae683f3cbc2662b0a60
 package-lock.json
 package.json
+
+
+
 
