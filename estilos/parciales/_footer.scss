@@ -1,0 +1,22 @@
+.foot {
+  padding: 40px 20px;
+  background-color: #ccd1d6;
+  & .foot__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .foot__list .foot__item {
+    list-style: none;
+  }
+  .foot__link {
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #0e0253;
+    font-size: 1.1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: bolder;
+    font-weight: bolder;
+  }
+}

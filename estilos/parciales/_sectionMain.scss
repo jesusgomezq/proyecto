@@ -1,0 +1,21 @@
+.sectionMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  & iframe {
+    width: 700px;
+    height: 250px;
+  }
+  &__contenedor {
+    flex-basis: 100%;
+    gap: 50px;
+    padding: 20px;
+  }
+  &__titulo {
+    font-size: 2rem;
+    color: #0e0253;
+  }
+  &__parrafo {
+    padding: 20px 20px 20px 0;
+  }
+}
