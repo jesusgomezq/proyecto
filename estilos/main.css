@@ -364,7 +364,6 @@ body {
   font-weight: bolder;
 }
 
-/*===>Mobile<===*/
 @media only screen and (max-width: 1400px) {
   .sectionMain {
     -webkit-box-orient: vertical;

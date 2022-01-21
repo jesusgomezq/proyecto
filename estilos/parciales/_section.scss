@@ -1,3 +1,5 @@
+@import "./variables";
+
 .section {
   width: 100%;
   background-image: url(../asset/header_isla.jpg);
@@ -13,7 +15,7 @@
   &__contenedor {
     width: 50%;
     font-size: 3rem;
-    color: white;
+    color: $colorTerciario;
   }
   &__contenedor h1 {
     width: 100%;

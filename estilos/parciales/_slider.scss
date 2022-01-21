@@ -1,3 +1,5 @@
+@import "./variables";
+
 .slider__contenedor {
   margin: auto;
   width: 100%;
@@ -45,9 +47,9 @@
   }
   .slider__menu .slider__menu__item .slider__link {
     display: inline-block;
-    color: white;
+    color: $colorTerciario;
     text-decoration: none;
-    background-color: #3d9af3;
+    background-color: $colorSecundario;
     width: 40px;
     height: 40px;
     font-size: 1.1rem;
