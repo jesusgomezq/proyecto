@@ -101,6 +101,15 @@ body {
   background-color: #3d9af3;
 }
 
+.btn {
+  font-size: 1.25rem;
+  background-color: #0e0253;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
 .sectionMain {
   width: 100%;
   height: auto;
@@ -293,9 +302,7 @@ body {
 
 .contacto .contacto__formulario .nombre,
 .contacto .apellido,
-.contacto .correo,
-.contacto .contacto__pais,
-.contacto .contacto__mensaje {
+.contacto .correo, .contacto__pais, .contacto__mensaje {
   background: none;
   border: none;
   outline: none;
@@ -311,8 +318,7 @@ body {
 
 .contacto .nombre,
 .contacto .apellido,
-.contacto .correo,
-.contacto .contacto__pais {
+.contacto .correo, .contacto__pais {
   width: 46%;
   margin-bottom: 20px;
 }
@@ -325,11 +331,11 @@ body {
   max-height: 300px;
 }
 
-.contacto .contacto__formulario .apellido:focus,
-.contacto .contacto__formulario .correo:focus,
-.contacto .contacto__formulario .nombre:focus,
-.contacto .contacto__formulario .contacto__pais:focus,
-.contacto .contacto__formulario .contacto__mensaje:focus {
+.contacto__formulario .apellido:focus,
+.contacto__formulario .correo:focus,
+.contacto__formulario .nombre:focus,
+.contacto__formulario .contacto__pais:focus,
+.contacto__formulario .contacto__mensaje:focus {
   border-bottom: 2px solid #3d9af3;
 }
 
@@ -350,11 +356,11 @@ body {
           align-items: center;
 }
 
-.foot .foot__list .foot__item {
+.foot__list .foot__item {
   list-style: none;
 }
 
-.foot .foot__link {
+.foot__link {
   text-decoration: none;
   margin: 0px 10px;
   color: #0e0253;

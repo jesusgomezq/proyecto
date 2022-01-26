@@ -9,16 +9,16 @@
     margin: 20px 0;
     text-align: center;
   }
-  & .contacto__contenedor .contacto__formulario {
+  & &__contenedor &__formulario {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  & .contacto__formulario .nombre,
+  & &__formulario .nombre,
   .apellido,
   .correo,
-  .contacto__pais,
-  .contacto__mensaje {
+  &__pais,
+  &__mensaje {
     background: none;
     border: none;
     outline: none;
@@ -34,22 +34,22 @@
   & .nombre,
   .apellido,
   .correo,
-  .contacto__pais {
+  &__pais {
     width: 46%;
     margin-bottom: 20px;
   }
-  & .contacto__mensaje {
+  & &__mensaje {
     width: 96%;
     max-width: 96%;
     min-width: 96%;
     min-height: 100px;
     max-height: 300px;
   }
-  .contacto__formulario .apellido:focus,
-  .contacto__formulario .correo:focus,
-  .contacto__formulario .nombre:focus,
-  .contacto__formulario .contacto__pais:focus,
-  .contacto__formulario .contacto__mensaje:focus {
+  &__formulario .apellido:focus,
+  &__formulario .correo:focus,
+  &__formulario .nombre:focus,
+  &__formulario .contacto__pais:focus,
+  &__formulario .contacto__mensaje:focus {
     border-bottom: 2px solid $colorSecundario;
   }
 }

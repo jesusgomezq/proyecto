@@ -3,15 +3,15 @@
 .foot {
   padding: 40px 20px;
   background-color: $colorFondo;
-  & .foot__list {
+  & &__list {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .foot__list .foot__item {
+  &__list &__item {
     list-style: none;
   }
-  .foot__link {
+  &__link {
     text-decoration: none;
     margin: 0px 10px;
     color: $colorPrincipal;
