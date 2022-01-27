@@ -4,8 +4,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  // background-color: rgba(14, 2, 83, 0.2);
+  color: white;
   &__logo {
-    margin: auto 10px;
+    margin: auto 15px;
+    max-height: 100px;
+    margin-bottom: 20px;
   }
   &__list {
     display: flex;
@@ -18,6 +26,8 @@
   &__link {
     text-decoration: none;
     font-size: 1.5rem;
+    color: $colorPrincipal;
+    font-weight: bold;
   }
   &__link:hover {
     border-bottom: 2px solid $colorSecundario;

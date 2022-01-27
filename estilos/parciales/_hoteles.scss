@@ -1,0 +1,99 @@
+.contenedor__hoteles {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.titulo--hoteles {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 9px 0;
+  color: #0e0253;
+}
+
+.contenedor__galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 300px;
+  padding: 20px;
+  grid-gap: 10px;
+  & .galeria__contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  & .galeria__contenedor .galeria__img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+  }
+  & .galeria__contenedor .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+  }
+  & .galeria__contenedor:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+  }
+  & .galeria__contenedor:hover > .capa .galeria__titulo {
+    margin-top: 110px;
+    margin-bottom: 10px;
+  }
+  & .galeria__contenedor .capa .galeria__titulo {
+    color: #0e0253;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 150px;
+    transition: all 500ms ease-out;
+    margin-top: 130px;
+    padding-bottom: 30px;
+  }
+  & .galeria__contenedor:hover > .galeria__img {
+    transform: scale(1.1);
+  }
+}
+
+.galeria__link {
+  color: #0e0253;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: 3px solid #3d9af3;
+  opacity: 0.9;
+}
+
+.galeria__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*==========MOBILE=======*/
+
+@media screen and (max-width: 376px) {
+  .contenedor__galeria {
+    display: block;
+  }
+
+  .titulo--hoteles {
+    font-size: 2rem;
+  }
+
+  .galeria__img {
+    width: 100%;
+    max-height: 70%;
+    margin: 20px 0;
+  }
+}
