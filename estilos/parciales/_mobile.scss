@@ -19,6 +19,10 @@
     width: 50%;
   }
 
+  .atracciones__contenedor h3 {
+    font-size: 2rem;
+  }
+
   .atracciones__contenedor .atracciones__imagen {
     width: 75%;
     margin: 0 auto;
@@ -33,6 +37,7 @@
     margin-bottom: 50px;
   }
 }
+
 @media screen and (max-width: 1000px) {
   .header {
     width: 100%;
