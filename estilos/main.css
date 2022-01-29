@@ -864,6 +864,9 @@ body {
     padding: 20px;
     grid-gap: 10px;
   }
+  .capa {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 376px) {
@@ -909,6 +912,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .conedor__galeria .galeria__contenedor:hover > .capa {
+    opacity: 1;
+  }
+  .galeria__contenedor .capa .galeria__titulo {
+    display: none;
+  }
+  .galeria__contenedor:hover > .capa .galeria__titulo {
+    display: none;
   }
 }
 
