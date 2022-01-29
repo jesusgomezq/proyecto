@@ -8,7 +8,6 @@
 
   .sectionMain iframe {
     width: 100%;
-    /* margin-bottom: 25px; */
   }
 
   .sectionMain div h2 {
@@ -36,6 +35,10 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
+  .contneedor__hotles {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -43,11 +46,15 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-  }
-  .header__nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    &__nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
@@ -58,44 +65,37 @@
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
-  }
-
-  .header__logo {
-    width: 50%;
-  }
-
-  .header__nav {
-    width: 100%;
-    display: flex;
-  }
-
-  .header__nav .header__list {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header__item {
-    margin: 0 5px;
-  }
-
-  .header__link {
-    font-size: 1.1rem;
+    &__logo {
+      width: 50%;
+    }
+    &__nav {
+      width: 100%;
+      display: flex;
+    }
+    &__nav &__list {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    &__item {
+      margin: 0 5px;
+    }
+    &__link {
+      font-size: 1.1rem;
+    }
   }
 
   .section {
     padding: 0;
     text-align: center;
-  }
-
-  .section__contenedor {
-    width: 100%;
-    font-size: 2rem;
-    padding: 10px;
-  }
-
-  .section__contenedor h1 {
-    margin-bottom: 20px;
+    &__contenedor {
+      width: 100%;
+      font-size: 2rem;
+      padding: 10px;
+    }
+    &__contenedor h1 {
+      margin-bottom: 20px;
+    }
   }
 
   .btn {
@@ -154,7 +154,7 @@
 
   .section {
     display: flex;
-    // background-image: none;
+    background-image: url(/asset/header_isla.jpg);
     width: 100%;
     margin-top: 10px;
     overflow: hidden;
@@ -205,6 +205,6 @@
   }
 
   .foot .foot__list {
-    flex-direction: column;
+    flex-direction: row;
   }
 }

@@ -396,7 +396,6 @@ body {
   }
   .sectionMain iframe {
     width: 100%;
-    /* margin-bottom: 25px; */
   }
   .sectionMain div h2 {
     margin-bottom: 25px;
@@ -418,6 +417,9 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .contneedor__hotles {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -438,6 +440,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -559,6 +569,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-image: url(/asset/header_isla.jpg);
     width: 100%;
     margin-top: 10px;
     overflow: hidden;
@@ -615,10 +626,10 @@ body {
             align-items: center;
   }
   .foot .foot__list {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -640,10 +651,9 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 550px;
+  grid-auto-rows: 560px;
   padding: 20px;
   grid-gap: 10px;
-  overflow: hidden;
 }
 
 .contenedor__galeria .galeria__contenedor {
@@ -707,6 +717,7 @@ body {
 .contenedor__galeria .galeria__texto {
   margin-top: 20px auto;
   padding: 20px;
+  overflow: initial;
 }
 
 .contenedor__galeria .galeria__contenedor:hover > .galeria__img {
@@ -731,18 +742,173 @@ body {
      object-fit: cover;
 }
 
-/*==========MOBILE=======*/
-@media screen and (max-width: 376px) {
+/*=========MOBILE=======*/
+@media screen and (max-width: 2000px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .contenedor__galeria {
-    display: block;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 590px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  .contenedor__galeria .galeria__contenedor {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contenedor__galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 600px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__logo {
+    margin: 0 auto;
+  }
+  .contenedor__galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: 560px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__link {
+    font-size: 1rem;
   }
   .titulo--hoteles {
     font-size: 2rem;
   }
-  .galeria__img {
+  .contenedor__galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: 590px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .titulo--hoteles {
+    font-size: 1.5rem;
+  }
+  .contenedor__hoteles {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .contenedor__galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: 670px;
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  .capa {
+    display: none;
+  }
+  .foot {
     width: 100%;
-    max-height: 70%;
-    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .foot .foot__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .foot__footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -757,6 +923,7 @@ body {
 .main__contenedor {
   width: 90vw;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 .main__contenedor .galeria__contenedor .galeria__img {
@@ -803,7 +970,7 @@ body {
   padding-bottom: 30px;
 }
 
-.main__contenedor .galeria__texto {
+.main__contenedor .excursiones__texto {
   margin-top: 20px auto;
   padding: 20px;
 }
@@ -813,7 +980,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 500px;
+  grid-auto-rows: 520px;
   padding: 20px;
   grid-gap: 10px;
 }
@@ -830,11 +997,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
   border-radius: 7px;
   -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .galeria__link {

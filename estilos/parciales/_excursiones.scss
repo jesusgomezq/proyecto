@@ -11,7 +11,7 @@
 .main__contenedor {
   width: 90vw;
   margin: 0 auto;
-
+  border-radius: 5px;
   & .galeria__contenedor .galeria__img {
     width: 100%;
     height: 300px;
@@ -47,7 +47,7 @@
     margin-top: 130px;
     padding-bottom: 30px;
   }
-  & .galeria__texto {
+  & .excursiones__texto {
     margin-top: 20px auto;
     padding: 20px;
   }
@@ -55,18 +55,19 @@
 .main__galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 500px;
+  grid-auto-rows: 520px;
   padding: 20px;
   grid-gap: 10px;
+
   & .galeria__contenedor {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
     border-radius: 7px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    overflow: hidden;
   }
 }
 
