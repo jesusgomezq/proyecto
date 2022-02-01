@@ -29,10 +29,10 @@
 
   .atracciones__parrafo {
     height: 125px;
+    margin-bottom: 0;
   }
 
   .atracciones__btn {
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 
@@ -154,7 +154,7 @@
 
   .section {
     display: flex;
-    background-image: url(/asset/header_isla.jpg);
+    background-image: url(../asset/header_isla.jpg);
     width: 100%;
     margin-top: 10px;
     overflow: hidden;
