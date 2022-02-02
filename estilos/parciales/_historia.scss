@@ -4,6 +4,7 @@
   width: 90%;
   height: auto;
   display: flex;
+  margin: 0 auto;
 
   &__contenedor {
     flex-basis: 100%;
@@ -12,7 +13,7 @@
     margin: 20px 0;
   }
   &__titulo {
-    text-align: end;
+    // text-align: end;
     font-size: 2.7rem;
     color: $colorPrincipal;
     padding: 0 20px;
@@ -28,4 +29,22 @@
   width: 90%;
   max-height: 330px;
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sectionHistoria {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sectionHistoria__contenedor {
+    margin: 0 auto;
+  }
+
+  .historia__img {
+    min-width: 250px;
+    max-width: 450px;
+    width: 100%;
+  }
 }

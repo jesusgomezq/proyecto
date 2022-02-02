@@ -55,11 +55,12 @@
 .main__galeria {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 520px;
+  grid-auto-rows: auto;
   padding: 20px;
   grid-gap: 10px;
 
   & .galeria__contenedor {
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -89,4 +90,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main__galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria__contenedor {
+    margin-bottom: 40px;
+  }
+
+  .titulo--tours {
+    font-size: 2.25rem;
+    margin-top: 50px;
+  }
 }

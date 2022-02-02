@@ -51,4 +51,10 @@
   &__formulario .contacto__mensaje:focus {
     border-bottom: 2px solid $colorSecundario;
   }
+
+  .contacto__texto {
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+  }
 }

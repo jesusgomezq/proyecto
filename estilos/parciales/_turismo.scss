@@ -4,15 +4,19 @@
   width: 90%;
   height: auto;
   display: flex;
+  margin: 0 auto;
 
   &__contenedor {
     flex-basis: 100%;
-    gap: 50px;
+    // gap: 70px;
     padding: 20px;
     margin: 20px 0;
   }
+  &__contenedor:last-child {
+    text-align: center;
+  }
+
   &__titulo {
-    text-align: start;
     font-size: 2.7rem;
     color: $colorPrincipal;
     padding: 0 20px;
@@ -28,4 +32,23 @@
   width: 90%;
   max-height: 330px;
   border-radius: 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sectionTurismo {
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sectionTurismo__contenedor {
+    margin: 0 auto;
+  }
+
+  .turismo__img {
+    min-width: 250px;
+    max-width: 450px;
+    width: 100%;
+  }
 }
