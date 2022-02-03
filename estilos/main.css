@@ -125,6 +125,7 @@ body {
 .sectionMain iframe {
   width: 700px;
   height: 250px;
+  border-radius: 10px;
 }
 
 .sectionMain__contenedor {
@@ -191,6 +192,7 @@ body {
   max-height: 250px;
   min-height: 250px;
   padding: 10px;
+  border-radius: 20px;
 }
 
 .atracciones__contenedor h3 {
@@ -251,6 +253,7 @@ body {
   min-height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 .slider__contenedor .slider__list .slider__item:first-child {
