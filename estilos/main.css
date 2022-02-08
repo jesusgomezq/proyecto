@@ -452,6 +452,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  a {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -468,7 +471,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header__logo {
+  a .header__logo {
     width: 50%;
   }
   .header__nav {
@@ -491,6 +494,9 @@ body {
   }
   .header__link {
     font-size: 1.1rem;
+  }
+  .header a {
+    text-align: center;
   }
   .section {
     padding: 0;
